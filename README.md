@@ -9,7 +9,11 @@ Usage
  Test the model on data 'price_pre.csv'
  
 Network
+
+
+
  class RNN(nn.Module):
+  
     def __init__(self):
         super(RNN, self).__init__()
         #size is [feature_hidden_size]
