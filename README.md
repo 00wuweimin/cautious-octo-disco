@@ -1,4 +1,4 @@
-# cautious-octo-disco
+#  derivative pricing model with RNN
  derivative pricing model with RNN
 
 Environment 
