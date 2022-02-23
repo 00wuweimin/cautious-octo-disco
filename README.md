@@ -12,6 +12,7 @@ Network
 
 
 class RNN(nn.Module):
+
     def __init__(self):
         super(RNN, self).__init__()
         self.rnn1 = nn.RNN(
