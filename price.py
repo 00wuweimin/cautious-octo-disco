@@ -136,7 +136,7 @@ for step in np.arange(num):
     optimizer.zero_grad()
     loss.backward()
     optimizer.step()
-    print('iteration:'%(step))
+    print('iteration:',step)
     print('loss value:',loss)
 
 
