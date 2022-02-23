@@ -11,32 +11,30 @@ Usage
 Network
 
 
-
- class RNN(nn.Module):
-  
+class RNN(nn.Module):
     def __init__(self):
         super(RNN, self).__init__()
-        #size is [feature_hidden_size]
         self.rnn1 = nn.RNN(
             input_size = 2,  #input_size = 2
             hidden_size = 100,  #hidden_1_size=100
             num_layers = 1,
-            batch_first = True  #shape is [batch_size, time_step, feature]
+            batch_first = True 
         )
         self.rnn2 = nn.RNN(
             input_size=100,  #hidden_1_size=100
             hidden_size=60,  #hidden_2_size=30
             num_layers=1,
-            batch_first=True  # shape is [batch_size, time_step, feature]
+            batch_first=True  
         )
 
         self.rnn3 = nn.RNN(
             input_size=60,  #hidden_1_size=100
             hidden_size=30,  #hidden_2_size=30
             num_layers=1,
-            batch_first=True  # shape is [batch_size, time_step, feature]
+            batch_first=True  
         )
 
+        
         self.out1 = nn.Linear(30, 10)   #output_size=2
         self.out2 = nn.Linear(10, 2)  # output_size=2
 
